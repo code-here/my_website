@@ -26,7 +26,12 @@
         justify-content: flex-end;
         gap: 2rem;
 
-        span:hover {
+        .option {
+            color: $textColor;
+            text-decoration: none;
+        }
+
+        .option:hover {
             @include invertedTextStyle;
         }
     

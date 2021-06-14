@@ -8,16 +8,16 @@ import Header from './components/header/header.component';
 import './App.css';
 
 const App = () => (
+  <HashRouter  basename="/">
     <div className="app">
-      <HashRouter  basename="/">
       <Header />
         <Switch>
           <Route exact path="/"  component={ About } />
           <Route path="/projects" component={ Projects } />
         </Switch>
       <Footer />
-      </HashRouter>
     </div>
+  </HashRouter>
 );
 
 export default App;
