@@ -26,8 +26,12 @@
     }
 
     .project-preview-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: left;
         border: 1px solid;
-        height: 40vh;
+        min-height: 40vh;
         position: relative;
         padding: 2rem 1rem;
 

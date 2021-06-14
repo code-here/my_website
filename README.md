@@ -7,3 +7,5 @@ technologies in use :
 - HTML
 - javascript
 - scss
+
+hosted on [github pages](https://code-here.github.io/my_website).

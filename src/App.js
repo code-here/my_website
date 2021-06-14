@@ -1,7 +1,7 @@
 import { HashRouter, Switch, Route } from 'react-router-dom';
 
 import About from './pages/about/about.page';
-import Projects from './pages/projects/projects.component';
+import ProjectsPage from './pages/projects-page/projects-page.component';
 import Footer from './components/footer/footer.componet';
 import Header from './components/header/header.component';
 
@@ -13,7 +13,7 @@ const App = () => (
       <Header />
         <Switch>
           <Route exact path="/"  component={ About } />
-          <Route path="/projects" component={ Projects } />
+          <Route path="/projects" component={ ProjectsPage } />
         </Switch>
       <Footer />
     </div>
