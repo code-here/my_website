@@ -1,0 +1,31 @@
+@import "../../components/colors";
+
+.about {
+    width: 60vw;
+    margin: 5rem auto 0;
+}
+
+// h2, h3 {
+//     position: relative;
+
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         left: -0.5rem;
+//         bottom: 0;
+//         width: 3rem;
+//         height: 0.8rem;
+//         background-color: rgb(14, 88, 88);
+//         transform: skew(-12deg);
+//         border-radius: 2px;
+//         z-index: -1;
+//     }
+// }
+
+h2, h3 {
+    color: $backgroundColor;
+    background-color: $textColor;
+    display: inline-block;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+}

@@ -1,0 +1,38 @@
+@mixin title {
+    position: absolute;
+    top: -2rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+    height: 65vh;
+
+    .filter-container {
+        border: 1px solid;
+        position: relative;
+        padding: 2rem 1rem;
+
+        .title {
+            @include title;
+        }
+
+        .radio-container {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .project-preview-container {
+        border: 1px solid;
+        height: 40vh;
+        position: relative;
+        padding: 2rem 1rem;
+
+        .title {
+            @include title;
+        }
+    }
+}

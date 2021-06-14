@@ -1,0 +1,38 @@
+@import "../colors";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vw;
+    align-items: center;
+    vertical-align: middle;
+    padding: 0 5rem;
+
+    .title-container {
+        font-size: 2rem;
+        border: 1px solid;
+        padding: 0.5rem;
+        box-shadow: 0 0 6px;
+    }
+
+    span {
+        cursor: pointer;
+    }
+
+    .options {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+
+        span:hover {
+            @include invertedTextStyle;
+        }
+    
+    }
+}
+
+
+
+

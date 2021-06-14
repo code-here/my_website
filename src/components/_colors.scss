@@ -1,0 +1,8 @@
+$textColor: #DEB992;
+$backgroundColor: #051622;
+$linkColor: #1BA098;
+
+@mixin invertedTextStyle {
+    color: $backgroundColor;
+    background-color: $textColor;
+}
