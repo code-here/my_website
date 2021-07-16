@@ -1,7 +1,9 @@
+@import '../colors';
+
 .project-preview {
     border: 1px solid;
     max-width: 20%;
-    max-height: 30%;
+    max-height: 20vh;
     padding: 0.5rem;
     flex-grow: 1;
     border-radius: 5px;
@@ -10,6 +12,23 @@
 
     .project-name {
         border-bottom: 1px solid;
-        padding-bottom: 0.5rem;
+        padding: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        @include invertedTextStyle;
+    }
+
+    &:hover {
+        @include invertedTextStyle;
+
+        .project-name {
+            @include textStyle;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project-preview {
+        min-width: 40%;
     }
 }

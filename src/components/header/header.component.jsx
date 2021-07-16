@@ -11,8 +11,8 @@ const Header = ({ history }) => (
       </Link>
     </div>
     <div className="options">
-      <Link className="option" to="/projects">{`{ Projects }`}</Link>
-      <Link className="option" to="/contacts">{`{ Contact me }`}</Link>
+      <Link className="option" to="/projects">{`impl Projects {}`}</Link>
+      <Link className="option" to="/contacts">{`impl Contact {}`}</Link>
     </div>
   </div>
 );

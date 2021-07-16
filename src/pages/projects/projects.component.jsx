@@ -8,55 +8,38 @@ import "./projects.styles.scss";
 const Projects = ({ history }) => {
   let [radioState, dispatchRadioState] = useState("all");
 
+  const handleClick = (e) => {
+    document
+      .querySelectorAll(".filter")
+      .forEach((item) => item.classList.remove("selected"));
+    e.target.classList.add("selected");
+
+    dispatchRadioState(e.target.attributes.value.value);
+  };
+
   return (
     <div className="projects-container">
       <div className="filter-container">
         <h3 className="title">Filter</h3>
-        <div className="radio-container">
-          <div>
-            <input
-              type="radio"
-              name="filter"
-              value="all"
-              onClick={(e) => dispatchRadioState(e.target.value)}
-              defaultChecked
-            />{" "}
-            All
+        <div className="filter-type-container">
+          <div className="filter selected" value="all" onClick={handleClick}>
+            {" "}
+            All{" "}
           </div>
-          <div>
-            <input
-              type="radio"
-              name="filter"
-              value="react"
-              onClick={(e) => dispatchRadioState(e.target.value)}
-            />{" "}
+          <div className="filter" value="react" onClick={handleClick}>
+            {" "}
             React
           </div>
-          <div>
-            <input
-              type="radio"
-              name="filter"
-              value="rust"
-              onClick={(e) => dispatchRadioState(e.target.value)}
-            />{" "}
+          <div className="filter" value="rust" onClick={handleClick}>
+            {" "}
             Rust
           </div>
-          <div>
-            <input
-              type="radio"
-              name="filter"
-              value="web"
-              onClick={(e) => dispatchRadioState(e.target.value)}
-            />{" "}
+          <div className="filter" value="web" onClick={handleClick}>
+            {" "}
             WEB
           </div>
-          <div>
-            <input
-              type="radio"
-              name="filter"
-              value="cli"
-              onClick={(e) => dispatchRadioState(e.target.value)}
-            />{" "}
+          <div className="filter" value="cli" onClick={handleClick}>
+            {" "}
             CLI
           </div>
         </div>

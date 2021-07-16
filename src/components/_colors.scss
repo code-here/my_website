@@ -6,3 +6,8 @@ $linkColor: #1BA098;
     color: $backgroundColor;
     background-color: $textColor;
 }
+
+@mixin textStyle {
+    color: $textColor;
+    background-color: $backgroundColor;
+}

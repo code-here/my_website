@@ -1,6 +1,11 @@
+@import '../../components/colors';
+
 @mixin title {
     position: absolute;
     top: -2rem;
+    border-radius: 5px;
+    padding: 5px;
+    @include invertedTextStyle;
 }
 
 .projects-container {
@@ -8,7 +13,7 @@
     flex-direction: column;
     padding: 1rem 3rem;
     justify-content: space-between;
-    height: 65vh;
+    min-height: 65vh;
 
     .filter-container {
         border: 1px solid;
@@ -19,9 +24,19 @@
             @include title;
         }
 
-        .radio-container {
+        .filter-type-container {
             display: flex;
             justify-content: space-around;
+
+            .filter {
+                cursor: pointer;
+            
+                &.selected {
+                    padding: 5px;
+                    border-radius: 5px;
+                    @include invertedTextStyle;
+                }
+            }
         }
     }
 
@@ -29,14 +44,24 @@
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
-        justify-content: left;
+        justify-content: center;
         border: 1px solid;
         min-height: 40vh;
+        min-width: 30%;
         position: relative;
         padding: 2rem 1rem;
 
         .title {
             @include title;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .projects-container {
+        padding: 1rem;
+        .project-preview-container {
+            padding: 2rem 0;
         }
     }
 }
