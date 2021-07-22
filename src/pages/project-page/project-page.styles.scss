@@ -1,0 +1,76 @@
+@import "../../components/colors";
+
+.project-page {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    max-width: 70%;
+    align-self: center;
+    background-color: #0c1f2c;
+    border-radius: 0.5rem;
+
+    .title {
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+
+        .link_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #03121d;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            a {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                text-decoration: none;
+                color: inherit;
+                padding: 1rem;
+                border-radius: 0.5rem;
+    
+                &:hover {
+                    background-color: #0c1f2c;
+    
+                    svg path {
+                        fill: $textColor;
+                    }
+                }
+            }
+
+            svg {
+                width: 2rem;
+            }
+        }
+
+        .tags {
+            display: flex;
+            justify-content: space-around;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+
+            span {
+                background-color:#03121d;
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+            }
+        }
+
+    }
+
+    .markdown {
+        align-self: center;
+        background-color: #03121d;
+        min-width: 60%;
+        padding: 1rem;
+        border-radius: 0.5rem;
+
+        img {
+            max-width: 90%;
+        }
+    }
+}
