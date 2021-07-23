@@ -6,6 +6,7 @@ import ProjectPreview from "../../components/project-preview/project-preview.com
 import "./projects.styles.scss";
 
 const Projects = ({ history }) => {
+  //it really isn't radio button anymore
   let [radioState, dispatchRadioState] = useState("all");
 
   const handleClick = (e) => {

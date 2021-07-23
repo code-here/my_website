@@ -68,6 +68,8 @@
         min-width: 60%;
         padding: 1rem;
         border-radius: 0.5rem;
+        max-width: 120%;
+        overflow: auto;
 
         img {
             max-width: 90%;

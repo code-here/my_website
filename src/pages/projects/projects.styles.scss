@@ -30,10 +30,14 @@
 
             .filter {
                 cursor: pointer;
+                padding: 5px;
+                border-radius: 5px;
             
                 &.selected {
-                    padding: 5px;
-                    border-radius: 5px;
+                    @include invertedTextStyle;
+                }
+
+                &:hover {
                     @include invertedTextStyle;
                 }
             }
