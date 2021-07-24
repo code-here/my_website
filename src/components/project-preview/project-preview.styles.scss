@@ -3,10 +3,7 @@
 .project-preview {
     border: 1px solid $backgroundColor;
     background-color: #03121d;
-    max-width: 20%;
-    min-height: 10vh;
     padding: 0.5rem;
-    flex-grow: 1;
     border-radius: 5px;
     color: inherit;
     text-decoration: none;
@@ -28,14 +25,6 @@
         .project-name {
             @include textStyle;
         }
-    }
-
-    @media screen and (max-width: 800px) {
-            min-width: 40%;
-    }
-    
-    @media screen and (max-width: 420px) {
-        min-width: 80%;
     }
 }
 

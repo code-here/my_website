@@ -7,7 +7,7 @@ import ProjectPage from "../project-page/project-page.component";
 import "./projects-page.styles.scss";
 
 const ProjectsPage = ({ match }) => (
-  <div className="project-page">
+  <div className="projects-page">
     <Route exact path={match.path} component={Projects} />
     <Route path={`${match.path}/:projectId`} component={ProjectPage} />
   </div>

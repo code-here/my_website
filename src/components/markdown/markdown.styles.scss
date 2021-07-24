@@ -1,0 +1,18 @@
+
+.markdown-container{
+    position: relative;
+
+    .markdown {
+        align-self: center;
+        background-color: #03121d;
+        min-width: 60%;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        max-width: 100%;
+        overflow: auto;
+    
+        p img {
+            max-width: 70%;
+        }
+    }
+}

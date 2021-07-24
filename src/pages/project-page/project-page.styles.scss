@@ -3,11 +3,11 @@
 .project-page {
     display: flex;
     flex-direction: column;
-    margin: 1rem auto;
-    max-width: 70%;
-    align-self: center;
+    margin: 0 auto;
+    max-width: 60%;
     background-color: #0c1f2c;
     border-radius: 0.5rem;
+    padding: 2rem 5rem;
 
     .title {
         text-align: center;
@@ -18,11 +18,13 @@
 
         .link_container {
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
             justify-content: space-around;
             background-color: #03121d;
             padding: 1rem;
             border-radius: 0.5rem;
+            max-width: fit-content;
+            margin: 0 auto;
             a {
                 display: flex;
                 align-items: center;
@@ -51,7 +53,10 @@
             justify-content: space-around;
             gap: 0.5rem;
             flex-wrap: wrap;
-            align-items: center;
+            max-width: 60%;
+            justify-self: center;
+            margin-left: auto;
+            margin-right: auto;
 
             span {
                 background-color:#03121d;
@@ -62,17 +67,11 @@
 
     }
 
-    .markdown {
-        align-self: center;
-        background-color: #03121d;
-        min-width: 60%;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        max-width: 120%;
-        overflow: auto;
-
-        img {
-            max-width: 90%;
+    @media screen and (max-width: 800px) {
+        padding: 2rem;
+        max-width: 80%;
+        h1 {
+            font-size: 1.8rem;
         }
     }
 }

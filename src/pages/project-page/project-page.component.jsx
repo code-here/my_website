@@ -1,27 +1,17 @@
-import React, { useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
-import gfm from "remark-gfm";
+import React from "react";
 
 import projects from "../projects/projects.data";
 
 import { ReactComponent as GithubIcon } from "../../assets/github.svg";
 import { ReactComponent as WebsiteIcon } from "../../assets/website.svg";
 
+import Markdown from "../../components/markdown/markdown.component";
+
 import "./project-page.styles.scss";
 
 const ProjectPage = ({ match }) => {
   let { title, description, github_link, website_link, tags, readme } =
     projects.find((project) => project.id === parseInt(match.params.projectId));
-
-  let [markDown, setMarkDown] = useState("");
-  useEffect(() => {
-    let getMark = async () => {
-      let res = await fetch(readme);
-      let mark = await res.text();
-      setMarkDown(mark);
-    };
-    getMark();
-  }, [readme]);
 
   return (
     <div className="project-page">
@@ -51,11 +41,7 @@ const ProjectPage = ({ match }) => {
           ))}
         </p>
       </div>
-      <ReactMarkdown
-        className="markdown"
-        remarkPlugins={[gfm]}
-        children={markDown}
-      ></ReactMarkdown>
+      <Markdown url={readme} />
     </div>
   );
 };

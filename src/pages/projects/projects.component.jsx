@@ -7,7 +7,7 @@ import "./projects.styles.scss";
 
 const Projects = ({ history }) => {
   //it really isn't radio button anymore
-  let [radioState, dispatchRadioState] = useState("all");
+  let [filter, setFilter] = useState("all");
 
   const handleClick = (e) => {
     document
@@ -15,7 +15,7 @@ const Projects = ({ history }) => {
       .forEach((item) => item.classList.remove("selected"));
     e.target.classList.add("selected");
 
-    dispatchRadioState(e.target.attributes.value.value);
+    setFilter(e.target.attributes.value.value);
   };
 
   return (
@@ -48,9 +48,9 @@ const Projects = ({ history }) => {
       <div className="project-preview-container">
         <h3 className="title">Projects</h3>
         {projects.map((project) =>
-          radioState === project.technology ||
-          radioState === project.type ||
-          radioState === "all" ? (
+          filter === project.technology ||
+          filter === project.type ||
+          filter === "all" ? (
             <ProjectPreview key={project.id} project={project} />
           ) : (
             ""
