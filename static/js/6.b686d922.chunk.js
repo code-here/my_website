@@ -1,0 +1,2 @@
+(this.webpackJsonpmy_website=this.webpackJsonpmy_website||[]).push([[6],{245:function(e,s,t){},249:function(e,s,t){"use strict";t.r(s);t(0),t(245);var i=t(1);s.default=function(){return Object(i.jsx)("div",{className:"footer",children:Object(i.jsx)("span",{children:" Made by Abhinavy14(0x40)gmail.com "})})}}}]);
+//# sourceMappingURL=6.b686d922.chunk.js.map

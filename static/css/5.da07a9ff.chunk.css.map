@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/footer/footer.styles.scss"],"names":[],"mappings":"AAAA,QACI,SAAA,CACA,UAAA,CACA,iBAAA,CACA,oBAAA","file":"5.da07a9ff.chunk.css","sourcesContent":[".footer {\n    height: 5%;\n    width: 100%;\n    text-align: center;\n    margin-top: 1rem auto;\n}"]}
