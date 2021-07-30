@@ -10,10 +10,13 @@
     padding: 0 5rem;
 
     .title-container {
+        font-family: 'Lobster Two';
         font-size: 2rem;
-        border: 1px solid;
-        padding: 0.5rem;
-        box-shadow: 0 0 6px;
+        background-color: $darkBackgroundColor;
+        border: 1px solid $lightBackgroundColor;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 2rem inset $lightBackgroundColor;
     }
 
     span {

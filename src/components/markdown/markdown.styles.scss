@@ -1,10 +1,11 @@
+@import '../colors';
 
 .markdown-container{
     position: relative;
 
     .markdown {
         align-self: center;
-        background-color: #03121d;
+        background-color: $darkBackgroundColor;
         min-width: 60%;
         padding: 1rem;
         border-radius: 0.5rem;

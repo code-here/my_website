@@ -1,0 +1,33 @@
+@import '../colors';
+
+.link_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $darkBackgroundColor;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-width: fit-content;
+    margin: 0 auto;
+    a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-decoration: none;
+        color: inherit;
+        padding: 1rem;
+        border-radius: 0.5rem;
+
+        &:hover {
+            background-color: $lightBackgroundColor;
+
+            svg path {
+                fill: $textColor;
+            }
+        }
+    }
+
+    svg {
+        width: 2rem;
+    }
+}

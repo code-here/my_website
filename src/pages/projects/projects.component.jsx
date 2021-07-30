@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
-import projects from "./projects.data";
 import ProjectPreview from "../../components/project-preview/project-preview.component";
+
+import { ProjectContext } from "../../context/provider/project-provider/project-provider.context";
 
 import "./projects.styles.scss";
 
 const Projects = ({ history }) => {
   //it really isn't radio button anymore
   let [filter, setFilter] = useState("all");
+  let { projects } = useContext(ProjectContext);
 
   const handleClick = (e) => {
     document
