@@ -37,6 +37,9 @@ const ProjectPage = ({ match }) => {
         <Tags tags={tags} />
       </div>
       <Markdown url={readme} />
+      <p style={{ color: "#f92672" }}>
+        Note: if images are not loading go to github link
+      </p>
     </div>
   );
 };

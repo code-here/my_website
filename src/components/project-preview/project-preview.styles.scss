@@ -21,6 +21,9 @@
     &:hover {
         border-color: inherit;
         @include invertedTextStyle;
+        transform: scale(1.04);
+        transition: 0.5s;
+        box-shadow: 1px 1px 10px inherit;
 
         .project-name {
             @include textStyle;

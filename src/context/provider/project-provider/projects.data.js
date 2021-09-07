@@ -125,7 +125,39 @@ const PROJECT_DATA = [
         type: "web",
         readme: "https://raw.githubusercontent.com/code-here/my_website/main/README.md"
     },
-    
+    {
+        id: 12,
+        title: "Fav cli tool/ themes/ fonts",
+        github_link: `${ github_baseurl }/tools`,
+        website_link: undefined,
+        description: "favorite cli tool, themes, fonts, etc.",
+        technology: "rust",
+        tags: ["tools", "rust", "themes", "fonts", "vscode"],
+        type: "cli",
+        readme: "https://raw.githubusercontent.com/code-here/tools/main/README.md"
+    },
+    {
+        id: 13,
+        title: "ls-rs",
+        github_link: `${ github_baseurl }/ls-rs`,
+        website_link: undefined,
+        description: "a bare minimum version of ls command",
+        technology: "rust",
+        tags: ["rust", "cli", "ls", "command", "list"],
+        type: "cli",
+        readme: "https://raw.githubusercontent.com/code-here/ls-rs/main/README.md"
+    },
+    {
+        id: 14,
+        title: "Mandelbrot-rs",
+        github_link: `${ github_baseurl }/mandelbrot-rs`,
+        website_link: undefined,
+        description: "generating mendelbrot image",
+        technology: "rust",
+        tags: ["rust", "cli", "image", "mandelbrot", "image_crate"],
+        type: "cli",
+        readme: "https://raw.githubusercontent.com/code-here/mandelbrot-rs/main/README.md"
+    },
 ]
 
 export default PROJECT_DATA;
